@@ -1,0 +1,115 @@
+
+header {
+  background-color: rgb(50, 163, 163);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+width: 100%   ;
+
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: rgb(82, 10, 10);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: brown;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-icon span {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(124, 49, 49);
+}
+
+#menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: brown;
+    flex-direction: column;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 10;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  #menu-toggle:checked + label + nav {
+    display: flex;
+  }
+}
+.banner{
+    background-image:url('./2x/Download\ Sunlight\ retro\ horizontal\ background\ circus\ sunbeam\ background\ for\ free.jpg');
+background-size: cover;
+background-position: center;
+text-align: start;
+padding: 100px 20px;
+  }
+  .cta{
+    display: inline-block;
+    background-color:red;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius:6%;
+    border: 10px solid red;
+    transition: background o.3s ease;
+  }
+.banner h1{
+  font-size: 3em;
+  margin-bottom: 10px;
+
+}
+.banner p{
+  font-size: 1.5em;
+  margin-bottom: 2px;
+
+}
+.cta:hover{
+  color: aqua;
+}
+@media (max-width: 600px){
+  banner:60px 15px;
+  }
+  .banner h1{
+    font-size: 2em;
+    color: green;
+
+}
+.banner p{
+  font-size: 1.2em;
+}
